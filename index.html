@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <form class="form" method="post">
+        <div class="container">
+            <fieldset class="field">
+                <legend>Create an accaunt</legend>
+                <label>Email (required)
+                    <input id="mail" type="email" required>
+                </label>
+                <label>Password (required)
+                    <input id="pass" type="password" required>
+                </label>
+            </fieldset>
+            <div class="button__submit">
+                <button data-modal class="form__btn">Submit</button>
+            </div>
+        </div>
+    </form>
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <div class="modal__title"></div>
+                    <button data-close class="btn btn_cancel">cancel</button>
+                    <button data-confirm class="btn btn_confirm">confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="confirm__content">
+        <h1 class="title"></h1>
+        <img class="img" src="./img/welldone.jpg" alt="">
+    </div>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
